@@ -116,14 +116,25 @@
 
                                     <!-- Begin::form-group -->
                                     <div class="form-group mt-3">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <input class="form-control form-control-lg box-rounded" type="text" name="name" placeholder="نام شما" required="" />
+                                        @auth
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input class="form-control form-control-lg box-rounded" type="text" name="name" placeholder="نام شما" required="" value="{{auth()->user()->name}}"/>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input class="form-control form-control-lg box-rounded" type="email" name="email" placeholder="ایمیل" required="" value="{{auth()->user()->email}}"/>
+                                                </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <input class="form-control form-control-lg box-rounded" type="email" name="email" placeholder="ایمیل" required="" />
+                                            @else
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <input class="form-control form-control-lg box-rounded" type="text" name="name" placeholder="نام شما" required="" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input class="form-control form-control-lg box-rounded" type="email" name="email" placeholder="ایمیل" required="" />
+                                                </div>
                                             </div>
-                                        </div>
+                                        @endauth
                                     </div>
 
                                     <div class="form-group">
