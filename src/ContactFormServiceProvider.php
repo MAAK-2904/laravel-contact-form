@@ -13,7 +13,7 @@ class ContactFormServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        require __DIR__.'\routes\route.php';
+        require __DIR__.'/routes/route.php';
 
         $this->loadViewsFrom(__DIR__.'/views','contactForm');
 
