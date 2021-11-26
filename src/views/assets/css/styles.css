@@ -1,0 +1,604 @@
+:root {
+  --swish-primary-color: #fe5454;
+  --swish-input-shadow: #fe545425;
+  --swish-border-radius: 5px;
+  --swish-box-shadow: 0 8px 40px -12px var(--swish-primary-color);
+}
+
+#auth-page {
+  background: url("../images/background.jpg") center / cover no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: Quicksand, sans-serif;
+}
+
+#auth-page .h1, #auth-page .h2, #auth-page .h3, #auth-page .h4, #auth-page .h5, #auth-page .h6, #auth-page h1, #auth-page h2, #auth-page h3, #auth-page h4, #auth-page h5, #auth-page h6 {
+  color: #32325d;
+}
+
+#auth-page .text-main {
+  color: #6d6e71;
+}
+
+#auth-page .text-neutral {
+  color: var(--swish-primary-color);
+}
+
+/* **
+ * -------------------------------------------------------------------------------
+ *  Button color scheme
+ * -------------------------------------------------------------------------------
+** */
+
+#auth-page .btn-main {
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  height: calc(1.25em + 1.25rem + 2px);
+  background: var(--swish-primary-color);
+}
+
+#auth-page .btn-outline-main {
+  background-color: transparent;
+  background-image: none;
+  color: var(--swish-primary-color);
+  border-color: var(--swish-primary-color);
+}
+
+#auth-page .btn-facebook {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-facebook, #auth-page .btn-facebook:hover {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+
+#auth-page .btn-facebook:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(59,89,153,.5);
+}
+
+#auth-page .btn-facebook.disabled, #auth-page .btn-facebook:disabled {
+  color: #fff;
+  background-color: #3b5999;
+  border-color: #3b5999;
+}
+
+#auth-page .btn-facebook:not(:disabled):not(.disabled).active, #auth-page .btn-facebook:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #2d4474;
+  border-color: #3b5999;
+}
+
+#auth-page .btn-facebook:not(:disabled):not(.disabled).active:focus, #auth-page .btn-facebook:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(59,89,153,.5);
+}
+
+#auth-page .btn-twitter {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-twitter, #auth-page .btn-twitter:hover {
+  color: #fff;
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+#auth-page .btn-twitter.focus, #auth-page .btn-twitter:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(29,161,242,.5);
+}
+
+#auth-page .btn-twitter.disabled, #auth-page .btn-twitter:disabled {
+  color: #fff;
+  background-color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+#auth-page .btn-twitter:not(:disabled):not(.disabled).active, #auth-page .btn-twitter:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #0c85d0;
+  border-color: #1da1f2;
+}
+
+#auth-page .btn-twitter:not(:disabled):not(.disabled).active:focus, #auth-page .btn-twitter:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(29,161,242,.5);
+}
+
+#auth-page .btn-instagram {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-instagram, #auth-page .btn-instagram:hover {
+  color: #fff;
+  background-color: #e4405f;
+  border-color: #e4405f;
+}
+
+#auth-page .btn-instagram.focus, #auth-page .btn-instagram:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(228,64,95,.5);
+}
+
+#auth-page .btn-instagram.disabled, #auth-page .btn-instagram:disabled {
+  color: #fff;
+  background-color: #e4405f;
+  border-color: #e4405f;
+}
+
+#auth-page .btn-instagram:not(:disabled):not(.disabled).active, #auth-page .btn-instagram:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #d31e40;
+  border-color: #e4405f;
+}
+
+#auth-page .btn-instagram:not(:disabled):not(.disabled).active:focus, #auth-page .btn-instagram:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(228,64,95,.5);
+}
+
+#auth-page .btn-pinterest {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-pinterest, #auth-page .btn-pinterest:hover {
+  color: #fff;
+  background-color: #bd081c;
+  border-color: #bd081c;
+}
+
+#auth-page .btn-pinterest.focus, #auth-page .btn-pinterest:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(189,8,28,.5);
+}
+
+#auth-page .btn-pinterest.disabled, #auth-page .btn-pinterest:disabled {
+  color: #fff;
+  background-color: #bd081c;
+  border-color: #bd081c;
+}
+
+#auth-page .btn-pinterest:not(:disabled):not(.disabled).active, #auth-page .btn-pinterest:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #8c0615;
+  border-color: #bd081c;
+}
+
+#auth-page .btn-pinterest:not(:disabled):not(.disabled).active:focus, #auth-page .btn-pinterest:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(189,8,28,.5);
+}
+
+#auth-page .btn-youtube {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-youtube, #auth-page .btn-youtube:hover {
+  color: #fff;
+  background-color: #cd201f;
+  border-color: #cd201f;
+}
+
+#auth-page .btn-youtube.focus, #auth-page .btn-youtube:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(205,32,31,.5);
+}
+
+#auth-page .btn-youtube.disabled, #auth-page .btn-youtube:disabled {
+  color: #fff;
+  background-color: #cd201f;
+  border-color: #cd201f;
+}
+
+#auth-page .btn-youtube:not(:disabled):not(.disabled).active, #auth-page .btn-youtube:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #a11918;
+  border-color: #cd201f;
+}
+
+#auth-page .btn-youtube:not(:disabled):not(.disabled).active:focus, #auth-page .btn-youtube:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(205,32,31,.5);
+}
+
+#auth-page .btn-slack {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-slack, #auth-page .btn-slack:hover {
+  color: #fff;
+  background-color: #3aaf85;
+  border-color: #3aaf85;
+}
+
+#auth-page .btn-slack.focus, #auth-page .btn-slack:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(58,175,133,.5);
+}
+
+#auth-page .btn-slack.disabled, #auth-page .btn-slack:disabled {
+  color: #fff;
+  background-color: #3aaf85;
+  border-color: #3aaf85;
+}
+
+#auth-page .btn-slack:not(:disabled):not(.disabled).active, #auth-page .btn-slack:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #2d8968;
+  border-color: #3aaf85;
+}
+
+#auth-page .btn-slack:not(:disabled):not(.disabled).active:focus, #auth-page .btn-slack:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(58,175,133,.5);
+}
+
+#auth-page .btn-dribbble {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-dribbble, #auth-page .btn-dribbble:hover {
+  color: #fff;
+  background-color: #ea4c89;
+  border-color: #ea4c89;
+}
+
+#auth-page .btn-dribbble.focus, #auth-page .btn-dribbble:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(234,76,137,.5);
+}
+
+#auth-page .btn-dribbble.disabled, #auth-page .btn-dribbble:disabled {
+  color: #fff;
+  background-color: #ea4c89;
+  border-color: #ea4c89;
+}
+
+#auth-page .btn-dribbble:not(:disabled):not(.disabled).active, #auth-page .btn-dribbble:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #e51e6b;
+  border-color: #ea4c89;
+}
+
+#auth-page .btn-dribbble:not(:disabled):not(.disabled).active:focus, #auth-page .btn-dribbble:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(234,76,137,.5);
+}
+
+#auth-page .btn-github {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+#auth-page .btn-github, #auth-page .btn-github:hover {
+  color: #fff;
+  background-color: #222;
+  border-color: #222;
+}
+
+#auth-page .btn-github.focus, #auth-page .btn-github:focus {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(34,34,34,.5);
+}
+
+#auth-page .btn-github.disabled, #auth-page .btn-github:disabled {
+  color: #fff;
+  background-color: #222;
+  border-color: #222;
+}
+
+#auth-page .btn-github:not(:disabled):not(.disabled).active, #auth-page .btn-github:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #090909;
+  border-color: #222;
+}
+
+#auth-page .btn-github:not(:disabled):not(.disabled).active:focus, #auth-page .btn-github:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none,0 0 0 0 rgba(34,34,34,.5);
+}
+
+#auth-page .btn:hover {
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  transform: translateY(-1px);
+}
+
+#auth-page .btn-primary {
+  background-color: var(--swish-primary-color);
+  border-color: var(--swish-primary-color);
+}
+
+#auth-page .btn-group-sm > .btn, #auth-page .btn-sm {
+  font-size: .75rem;
+}
+
+#auth-page .btn-shadow {
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+/* **
+ * -------------------------------------------------------------------------------
+ *  Custom Checkbox
+ * -------------------------------------------------------------------------------
+** */
+
+#auth-page input[type="checkbox"], #auth-page .checkbox input[type="checkbox"], #auth-page .checkbox-inline input[type="checkbox"] {
+  position: relative;
+  border: none;
+  margin-bottom: -2px;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+#auth-page input[type="checkbox"]:focus, #auth-page .checkbox input[type="checkbox"]:focus, #auth-page .checkbox-inline input[type="checkbox"]:focus {
+  outline: none;
+}
+
+#auth-page input[type="checkbox"]:after, #auth-page .checkbox input[type="checkbox"]:after, #auth-page .checkbox-inline input[type="checkbox"]:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: -10px;
+  margin-right: 5px;
+  border: 1px solid #686868;
+  -webkit-transition: 240ms;
+  -o-transition: 240ms;
+  transition: 240ms;
+  border-radius: 3px;
+}
+
+#auth-page input[type="checkbox"]:checked:after, #auth-page .checkbox input[type="checkbox"]:checked:after, #auth-page .checkbox-inline input[type="checkbox"]:checked:after {
+  border-color: var(--swish-primary-color);
+}
+
+#auth-page input[type="checkbox"]:checked:before, #auth-page .checkbox input[type="checkbox"]:checked:before, #auth-page .checkbox-inline input[type="checkbox"]:checked:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 6px;
+  display: table;
+  width: 4px;
+  height: 10px;
+  border: 2px solid var(--swish-primary-color);
+  border-top-width: 0;
+  border-left-width: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+#auth-page .form-check .form-check-label, #auth-page .form-check .form-check-input:hover {
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* **
+ * -------------------------------------------------------------------------------
+ *  General Custom
+ * -------------------------------------------------------------------------------
+** */
+
+#auth-page .form-control:focus {
+  border: 1px solid var(--swish-primary-color);
+  box-shadow: 0 0 0.2rem var(--swish-input-shadow);
+  -webkit-box-shadow: 0 0 0 0.2rem var(--swish-input-shadow);
+  -moz-box-shadow: 0 0 0 0.2rem var(--swish-input-shadow);
+}
+
+#auth-page .box-rounded-left {
+  border-top-left-radius: var(--swish-border-radius)!important;
+  -moz-border-top-left-radius: var(--swish-border-radius)!important;
+  -webkit-border-top-left-radius: var(--swish-border-radius)!important;
+  border-bottom-left-radius: var(--swish-border-radius)!important;
+  -moz-border-bottom-left-radius: var(--swish-border-radius)!important;
+  -webkit-border-bottom-left-radius: var(--swish-border-radius)!important;
+}
+
+#auth-page .box-rounded-right {
+  border-top-right-radius: var(--swish-border-radius)!important;
+  -moz-border-top-right-radius: var(--swish-border-radius)!important;
+  -webkit-border-top-right-radius: var(--swish-border-radius)!important;
+  border-bottom-right-radius: var(--swish-border-radius)!important;
+  -moz-border-bottom-right-radius: var(--swish-border-radius)!important;
+  -webkit-border-bottom-right-radius: var(--swish-border-radius)!important;
+}
+
+#auth-page .box-rounded {
+  border-radius: var(--swish-border-radius) !important;
+  -moz-border-radius: var(--swish-border-radius)!important;
+  -webkit-border-radius: var(--swish-border-radius)!important;
+}
+
+#auth-page .overlay-background p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: .5px;
+  margin: 20px 40px 30px;
+}
+
+#auth-page .sign-in-form button {
+  transition: transform 80ms ease-in;
+}
+
+#auth-page a {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+#auth-page .box-shadow {
+  box-shadow: var(--swish-box-shadow)!important;
+}
+
+@media (max-width: 767px) {
+  #auth-page .form-box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 0 !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  }
+}
+
+#auth-page .reset-password {
+  width: 450px;
+  min-height: 500px;
+}
+
+#auth-page .overlay-background {
+  background: url("../images/overlay.png") center / cover no-repeat;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#auth-page .form-group > label {
+  color: var(--swish-primary-color);
+  font-size: 0.9em;
+}
+
+#auth-page .sign-in {
+  width: 100%;
+}
+
+#auth-page .sign-in-form .icon {
+  font-size: 86px;
+  color: #ff7043;
+}
+
+#auth-page .logo-image {
+  max-height: 50px;
+}
+
+@media (max-width: 767px) {
+  #auth-page .overlay-box {
+    min-height: 300px;
+  }
+}
+
+#auth-page .logo {
+  z-index: 2;
+}
+
+#auth-page .form-control-lg {
+  font-size: 1rem;
+  height: calc(1.5em + 1.25rem + 2px);
+}
+
+#auth-page .message-box {
+  z-index: 2;
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#auth-page .form-container {
+  max-width: 800px;
+  height: 600px;
+}
+
+#auth-page .form-control, #auth-page .input-group-text {
+  border: 1px solid #ebeff6;
+  box-shadow: none;
+  background: #f9fafb;
+}
+
+#auth-page .form-control, #auth-page label {
+  font-size: .875rem;
+}
+
+#auth-page .input-group > .custom-select:not(:first-child), #auth-page .input-group > .form-control:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#auth-page .input-group {
+  border: 0;
+  transition: box-shadow .15s ease;
+}
+
+#auth-page .input-group .form-control:not(:first-child) {
+  border-left: 0;
+  padding-left: 5px;
+}
+
+#auth-page .input-group-text {
+  background-color: #f9fafb;
+  color: var(--swish-primary-color);
+}
+
+#auth-page .form-control::placeholder, #auth-page .form-control:-ms-input-placeholder, #auth-page .form-control::-ms-input-placeholder, #auth-page .input-group .form-control {
+  color: #8898aa;
+  opacity: 1;
+}
+
+#auth-page .form-control::placeholder, #auth-page .form-control:focus::placeholder {
+  color: #adb5bd;
+}
+
+@media (max-width: 767px) {
+  #auth-page .message-box {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  #auth-page.swish-wrapper {
+    -ms-flex-pack: initial!important;
+    justify-content: initial!important;
+  }
+}
+
+@media (max-width: 767px) {
+  #auth-page .overlay-background:before {
+    border-radius: 0 !important;
+  }
+}
+
+#auth-page .form-box {
+  height: 100%;
+}
+
+#auth-page .text-header {
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  #auth-page .sign-in, #auth-page .sign-in-container {
+    padding: 0 !important;
+    height: auto !important;
+  }
+}
+
+#auth-page .form-container.forgot-password {
+  height: 480px;
+  width: 400px;
+}
+
+@media (max-width: 767px) {
+  #auth-page .form-container .row.h-100 {
+    height: initial !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #auth-page .form-container {
+    box-shadow: none !important;
+  }
+}
+
+#auth-page .forgot-password .logo-image {
+  max-height: 68px;
+}
+
+@media (max-width: 767px) {
+  #auth-page .form-container.forgot-password {
+    width: 100% !important;
+  }
+}
+
+#auth-page .text-600 {
+  font-weight: 600;
+}
+
+#auth-page .btn-link {
+  font-size: 16px;
+}
+

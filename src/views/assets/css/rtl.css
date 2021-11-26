@@ -1,0 +1,139 @@
+/*Fonts*/
+@font-face {
+    font-family: 'IS';
+    src: url('../webfonts/ISFaNum.eot');
+    src: url('../webfonts/ISFaNum.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ISFaNum.woff2') format('woff2'),
+    url('../webfonts/ISFaNum.woff') format('woff'),
+    url('../webfonts/ISFaNum.ttf') format('truetype'),
+    url('../webfonts/ISFaNum.svg#ISFaNum') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IS';
+    src: url('../webfonts/ISFaNumLi.eot');
+    src: url('../webfonts/ISFaNumLi.eot?#iefix') format('embedded-opentype'),
+    url('../webfonts/ISFaNumLi.woff2') format('woff2'),
+    url('../webfonts/ISFaNumLi.woff') format('woff'),
+    url('../webfonts/ISFaNumLi.ttf') format('truetype'),
+    url('../webfonts/ISFaNumLi.svg#ISFaNumLi') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*Fonts*/
+/*Style*/
+body {
+    direction: rtl;
+    font-family: 'IS';
+    text-align: right;
+}
+.form-check {
+    padding-left: initial;
+    padding-right: 1.25rem;
+}
+.input-group-prepend {
+    margin-right: initial;
+    margin-left: -1px;
+}
+.input-group-append {
+    margin-left: initial;
+    margin-right: -1px;
+}
+.mr-4, .mx-4 {
+    margin-right: initial!important;
+    margin-left: 1.5rem!important;
+}
+#auth-page .box-rounded-right {
+    border-top-right-radius: 0!important;
+    border-top-left-radius: var(--swish-border-radius)!important;
+    -moz-border-top-right-radius: 0!important;
+    -moz-border-top-left-radius: var(--swish-border-radius)!important;
+    -webkit-border-top-right-radius: 0!important;
+    -webkit-border-top-left-radius: var(--swish-border-radius)!important;
+
+    border-bottom-right-radius: 0!important;
+    border-bottom-left-radius: var(--swish-border-radius)!important;
+    -moz-border-bottom-right-radius: 0!important;
+    -moz-border-bottom-leftt-radius: var(--swish-border-radius)!important;
+    -webkit-border-bottom-right-radius: 0!important;
+    -webkit-border-bottom-leftt-radius: var(--swish-border-radius)!important;
+}
+#auth-page .box-rounded-left {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: var(--swish-border-radius)!important;
+    -moz-border-top-left-radius: 0!important;
+    -moz-border-top-right-radius: var(--swish-border-radius)!important;
+    -webkit-border-top-left-radius: 0!important;
+    -webkit-border-top-right-radius: var(--swish-border-radius)!important;
+
+    border-bottom-left-radius: 0!important;
+    border-bottom-right-radius: var(--swish-border-radius)!important;
+    -moz-border-bottom-left-radius: 0!important;
+    -moz-border-bottom-right-radius: var(--swish-border-radius)!important;
+    -webkit-border-bottom-left-radius: 0!important;
+    -webkit-border-bottom-right-radius: var(--swish-border-radius)!important;
+}
+#auth-page input[type="checkbox"]:after, #auth-page .checkbox input[type="checkbox"]:after, #auth-page .checkbox-inline input[type="checkbox"]:after {
+    margin-right: initial;
+    margin-left: 5px;
+}
+.form-check-input {
+    margin-left: initial;
+    margin-right: -1.25rem;
+}
+#auth-page input[type="checkbox"]:checked:before, #auth-page .checkbox input[type="checkbox"]:checked:before, #auth-page .checkbox-inline input[type="checkbox"]:checked:before {
+    left: initial;
+    right: 6px;
+}
+.rounded-right {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    border-top-left-radius: .25rem!important;
+    border-bottom-left-radius: .25rem!important;
+}
+#auth-page .overlay-background:before {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-top-right-radius: .25rem!important;
+    border-bottom-right-radius: .25rem!important;
+}
+#auth-page .form-container.register .overlay-background:before {
+    border-radius: 0 !important;
+    border-radius: .25rem!important;
+}
+.rounded-left {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-top-right-radius: .25rem!important;
+    border-bottom-right-radius: .25rem!important;
+}
+#auth-page {
+    font-family: 'IS';
+
+}
+#auth-page .input-group {
+    border-left: 0;
+    border-right: 3px solid var(--swish-primary-color);
+}
+#auth-page .login .form-box {
+    transform: translateX(-25px);
+}
+.mr-2, .mx-2 {
+    margin-right: initial!important;
+    margin-left: .5rem!important;
+}
+#auth-page .register .form-box {
+    transform: translateX(25px);
+}
+#auth-page .text-decoration-underline {
+    text-decoration: none;
+}
+@media (max-width: 767px) {
+    #auth-page .register .form-box, #auth-page .login .form-box {
+        max-width: 100%;
+        transform: translateX(0);
+    }
+}
+/*Style*/

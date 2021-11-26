@@ -1,0 +1,20 @@
+{
+    "name": "maak/contact-form",
+    "description": "MAAK Contact Form Package",
+    "authors": [
+        {
+            "name": "MAAK",
+            "email": "mahdiakbari1683@gmail.com"
+        }
+    ],
+
+    "autoload": {
+        "psr-4": {
+            "MAAK\\ContactForm\\" : "src/"
+        }
+    },
+
+    "require": {
+        "illuminate/support" : "~8"
+    }
+}
