@@ -122,7 +122,7 @@
                                                     <input class="form-control form-control-lg box-rounded" type="text" name="name" placeholder="نام شما" required="" value="{{auth()->user()->name}}"/>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <input class="form-control form-control-lg box-rounded" type="email" name="email" placeholder="ایمیل" required="" value="{{auth()->user()->email}}"/>
+                                                    <input class="form-control form-control-lg box-rounded" type="email" name="email" placeholder="ایمیل" required=""/>
                                                 </div>
                                             </div>
                                             @else
